@@ -48,7 +48,7 @@ class App extends React.Component {
                   </Accordion>
                 </Col>
                 <Col xs={6} md={4}>
-                  <Image src={bookInfo.coverImageUrl} alt={bookInfo.title} thumbnail />
+                  <Image src={bookInfo.coverImageUrl} onError="this.onerror=null;this.src='/book.png';" alt={bookInfo.title} thumbnail />
                 </Col>
               </Row>
             </Container>
